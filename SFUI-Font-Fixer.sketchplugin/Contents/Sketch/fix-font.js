@@ -99,6 +99,9 @@ var validateFontSpacing = function(layer) {
 var validateLineHeight = function(layer) {
     var fontSize = layer.fontSize();
     var lineHeights = {
+        6: 7.5,
+        7: 9.5,
+        8: 10.5,
         9: 11.5,
         10: 12,
         11: 13.5,
@@ -109,7 +112,20 @@ var validateLineHeight = function(layer) {
         16: 19.5,
         17: 20.5,
         18: 21.5,
-        19: 23.5
+        19: 23.5,
+        20: 24,
+        21: 25.5,
+        22: 26.5,
+        23: 28.5,
+        24: 29.5,
+        25: 30,
+        26: 31.5,
+        27: 34,
+        28: 34.5,
+        29: 35.5,
+        30: 36,
+        31: 37,
+        32: 38.5
     };
     var height = lineHeights[fontSize];
     if (height != nil) {
